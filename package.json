@@ -11,7 +11,10 @@
     "test:e2e": "playwright test"
   },
   "jest": {
-    "testPathIgnorePatterns": ["/node_modules/", "/e2e/"]
+    "testPathIgnorePatterns": ["/node_modules/", "/e2e/"],
+    "coverageThreshold": {
+      "global": { "lines": 80 }
+    }
   },
   "keywords": [],
   "author": "",
